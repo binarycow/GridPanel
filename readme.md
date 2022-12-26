@@ -47,8 +47,9 @@ you want it to be a read-only view.
 If you prefer, you can make a style:
 
 ```xaml
-<Style TargetType="{x:Type ItemsControl}"
-       BasedOn="{StaticResource {x:Type ItemsControl}}">
+<Style x:Key="GridPanelListBox" 
+       TargetType="{x:Type ListBox}"
+       BasedOn="{StaticResource {x:Type ListBox}}">
     <Setter Property="ItemsPanel">
         <Setter.Value>
             <ItemsPanelTemplate>
@@ -57,6 +58,15 @@ If you prefer, you can make a style:
         </Setter.Value>
     </Setter>
 </Style>
+```
+
+After making the style, you can use it like this:
+
+```xaml
+<ListBox Style="{StaticResource GridPanelListBox}" 
+         ItemsSource="{Binding Items}" 
+         SelectedItem="{Binding SelectedItem}">
+</ListBox>
 ```
 
 # Differences from WinUI's implementation
