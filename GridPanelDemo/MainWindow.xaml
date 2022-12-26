@@ -13,14 +13,18 @@
         <DataTemplate DataType="{x:Type local:ItemViewModel}">
             <Border BorderBrush="Black" 
                     BorderThickness="2"
-                    MinWidth="{Binding MinHeight}" 
+                    MinWidth="{Binding MinWidth}" 
                     MinHeight="{Binding MinHeight}">
                 <Border.Background>
                     <SolidColorBrush Color="{Binding Color}" />
                 </Border.Background>
                 <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-                    <TextBlock Text="{Binding MinHeight, StringFormat=Minimum Size: {0}}" />
-                    <TextBlock Text="{Binding Color, StringFormat=Color: {0}}" />
+                    <TextBlock Text="{Binding MinHeight, StringFormat=Minimum Size: {0}}"
+                               FontWeight="Bold" />
+                    <TextBlock Text="{Binding Color, StringFormat=Color: {0}}"
+                               FontWeight="Bold" />
+                    <Button Content="Delete"
+                            Command="{Binding RemoveCommand}"/>
                 </StackPanel>
             </Border>
         </DataTemplate>
