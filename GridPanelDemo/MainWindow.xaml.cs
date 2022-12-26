@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace GridPanel
+namespace GridPanelDemo
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

@@ -6,7 +6,6 @@
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <RootNamespace>GridPanel</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

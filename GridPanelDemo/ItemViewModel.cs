@@ -1,6 +1,6 @@
 using System.Windows.Media;
 
-namespace GridPanel;
+namespace GridPanelDemo;
 
 public class ItemViewModel
 {

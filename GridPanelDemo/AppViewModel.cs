@@ -6,7 +6,7 @@ using System.Windows.Media;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 
-namespace GridPanel;
+namespace GridPanelDemo;
 
 public class AppViewModel : ObservableValidator
 {

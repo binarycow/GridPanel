@@ -5,7 +5,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace GridPanel;
+namespace GridPanelDemo;
 
 internal struct VisibleChildEnumerator : IEnumerator<UIElement>, IEnumerable<UIElement>
 {

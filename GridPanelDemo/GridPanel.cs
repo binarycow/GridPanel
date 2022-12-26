@@ -2,7 +2,7 @@
 using System.Windows;
 using System.Windows.Controls;
 
-namespace GridPanel;
+namespace GridPanelDemo;
 
 public class GridPanel : Panel
 {
