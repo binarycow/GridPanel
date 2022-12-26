@@ -15,11 +15,12 @@ public class AppViewModel : ObservableValidator
     
     public AppViewModel()
     {
+        Items = new(Enumerable.Range(0, 5).Select(_ => CreateRandomItem()));
         this.AddRandomItemCommand = new RelayCommand(() => this.Items.Add(CreateRandomItem()));
         this.AddSpecificItemCommand = new RelayCommand(() => this.Items.Add(CreateSpecificItem()));
     }
 
-    public ObservableCollection<ItemViewModel> Items { get; } = new(Enumerable.Range(0, 5).Select(_ => CreateRandomItem()));
+    public ObservableCollection<ItemViewModel> Items { get; }
 
     public IRelayCommand AddRandomItemCommand { get; }
     public RelayCommand AddSpecificItemCommand { get; }
@@ -49,11 +50,13 @@ public class AppViewModel : ObservableValidator
     
     private static double GetRandomSize() => Random.Shared.Next(50, 250);
     private ItemViewModel CreateSpecificItem() => new (
+        this,
         GetRandomColor(),
         this.NextMinWidth,
         this.NextMinHeight
     );
-    private static ItemViewModel CreateRandomItem() => new (
+    private ItemViewModel CreateRandomItem() => new (
+        this,
         GetRandomColor(),
         GetRandomSize(),
         GetRandomSize()

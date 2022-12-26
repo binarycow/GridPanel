@@ -2,6 +2,16 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GridPanelDemo", "GridPanelDemo\GridPanelDemo.csproj", "{94A6E520-FF51-40A6-9E7F-63893416D931}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{F104E4ED-7B1E-4921-8860-DF2E21D7E048}"
+	ProjectSection(SolutionItems) = preProject
+		docs\img1.png = docs\img1.png
+		docs\img2.png = docs\img2.png
+		docs\img3.png = docs\img3.png
+		docs\img4.png = docs\img4.png
+		readme.md = readme.md
+		license.md = license.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
